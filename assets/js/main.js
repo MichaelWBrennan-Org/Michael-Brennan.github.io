@@ -99,7 +99,7 @@ function initializeSmoothScrolling() {
  * Initialize scroll-triggered animations
  */
 function initializeScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.service-card, .portfolio-item, .testimonial-card, .stat-item');
+    const animatedElements = document.querySelectorAll('.service-card, .portfolio-item, .stat-item');
     
     const observerOptions = {
         threshold: 0.1,
@@ -164,20 +164,6 @@ function initializeContactForm() {
             submitButton.innerHTML = originalText;
             submitButton.disabled = false;
         }, 2000);
-        
-        // For GitHub Pages, you might want to use a service like Formspree, Netlify Forms, or EmailJS
-        // Example with EmailJS:
-        // emailjs.send('service_id', 'template_id', data)
-        //     .then(() => {
-        //         showFormFeedback('success', 'Thank you! Your message has been sent successfully.');
-        //         contactForm.reset();
-        //     })
-        //     .catch(() => {
-        //         showFormFeedback('error', 'Sorry, there was an error sending your message. Please try again.');
-        //     })
-        //     .finally(() => {
-        //         submitButton.innerHTML = originalText;
-        //         submitButton.disabled = false;
         //     });
     });
 }
