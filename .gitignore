@@ -1,0 +1,21 @@
+# Jekyll build directory
+_site/
+
+# Jekyll cache
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby gems
+Gemfile.lock
+
+# IDE and editor files  
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

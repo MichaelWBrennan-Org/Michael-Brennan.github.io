@@ -144,27 +144,9 @@ function initializeContactForm() {
             return;
         }
         
-        // Show loading state
-        const submitButton = contactForm.querySelector('.form-submit');
-        const originalText = submitButton.innerHTML;
-        
-        submitButton.innerHTML = `
-            <svg class="btn-icon animate-spin" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8Z"/>
-            </svg>
-            Sending...
-        `;
-        submitButton.disabled = true;
-        
-        // Simulate form submission (replace with actual submission logic)
-        setTimeout(() => {
-            showFormFeedback('success', 'Thank you! Your message has been sent successfully.');
-            contactForm.reset();
-            
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-        }, 2000);
-        //     });
+        // TODO: Implement actual form submission to backend service
+        // Replace this placeholder with real form submission logic
+        showFormFeedback('error', 'Form submission not yet implemented. Please contact directly via email.');
     });
 }
 
