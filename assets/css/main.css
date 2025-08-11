@@ -696,6 +696,23 @@ section {
     font-size: var(--font-size-sm);
 }
 
+/* Placeholder styles for when testimonials are not yet available */
+.testimonial-placeholder {
+    text-align: center;
+    padding: var(--space-12);
+    color: var(--text-light);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-2xl);
+    border: 2px dashed var(--gray-300);
+    grid-column: 1 / -1;
+}
+
+.testimonial-placeholder p {
+    font-size: var(--font-size-lg);
+    font-style: italic;
+    margin: 0;
+}
+
 /* Contact Section */
 .contact {
     background: var(--bg-secondary);
