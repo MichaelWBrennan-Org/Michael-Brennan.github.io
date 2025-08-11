@@ -615,104 +615,6 @@ section {
     fill: currentColor;
 }
 
-/* Testimonials Section */
-.testimonials {
-    background: var(--bg-primary);
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-8);
-}
-
-.testimonial-card {
-    background: var(--white);
-    padding: var(--space-8);
-    border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-lg);
-    transition: all var(--transition-base);
-}
-
-.testimonial-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
-}
-
-.testimonial-content {
-    margin-bottom: var(--space-6);
-}
-
-.testimonial-content p {
-    font-size: var(--font-size-lg);
-    line-height: 1.7;
-    color: var(--text-secondary);
-    font-style: italic;
-}
-
-.testimonial-content p::before {
-    content: '"';
-    font-size: var(--font-size-3xl);
-    color: var(--primary-color);
-    line-height: 1;
-}
-
-.testimonial-content p::after {
-    content: '"';
-    font-size: var(--font-size-3xl);
-    color: var(--primary-color);
-    line-height: 1;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-}
-
-.author-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: var(--radius-full);
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.author-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.author-info h4 {
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-1);
-}
-
-.author-info p {
-    color: var(--text-light);
-    font-size: var(--font-size-sm);
-}
-
-/* Placeholder styles for when testimonials are not yet available */
-.testimonial-placeholder {
-    text-align: center;
-    padding: var(--space-12);
-    color: var(--text-light);
-    background: var(--bg-secondary);
-    border-radius: var(--radius-2xl);
-    border: 2px dashed var(--gray-300);
-    grid-column: 1 / -1;
-}
-
-.testimonial-placeholder p {
-    font-size: var(--font-size-lg);
-    font-style: italic;
-    margin: 0;
-}
-
 /* Contact Section */
 .contact {
     background: var(--bg-secondary);
@@ -1011,8 +913,7 @@ section {
     }
     
     .services-grid,
-    .portfolio-grid,
-    .testimonials-grid {
+    .portfolio-grid {
         grid-template-columns: 1fr;
         gap: var(--space-6);
     }
