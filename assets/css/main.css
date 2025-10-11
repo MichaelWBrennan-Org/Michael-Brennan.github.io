@@ -609,6 +609,25 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
+.project-actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-actions .btn {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+.project-actions .github-btn {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
 .github-icon {
     width: 16px;
     height: 16px;
