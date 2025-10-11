@@ -18,6 +18,7 @@ class LegalNavigation {
         this.updateAllLinks();
         this.addBreadcrumbs();
         this.highlightCurrentSection();
+        this.tailorLegalFooter();
     }
 
     isLegalDocument() {
@@ -26,7 +27,9 @@ class LegalNavigation {
             'cookie-policy', 'website-disclaimer', 'dmca-policy', 'eula',
             'refund-policy', 'legal-protection-summary', 'arbitration-agreement',
             'force-majeure-clause', 'liability-waiver', 'Match-3-privacy-policy',
-            'infinite-match-terms', 'infinite-match-eula'
+            'infinite-match-privacy-policy', 'infinite-match-terms', 'infinite-match-eula',
+            'infinite-match-cookie-policy', 'infinite-match-accessibility-statement',
+            'infinite-match-refund-policy'
         ];
         return legalDocs.some(doc => this.currentPath.includes(doc));
     }
@@ -102,6 +105,66 @@ class LegalNavigation {
                     link.setAttribute('href', this.isGamePage ? '../manifest.json' : 'manifest.json');
                 }
             }
+        });
+    }
+
+    // Reduce footer legal links based on current page context
+    tailorLegalFooter() {
+        const legalSections = Array.from(document.querySelectorAll('.footer .footer-links'));
+        if (legalSections.length === 0) return;
+
+        // Do not prune links on the consolidated legal index page
+        const isLegalIndex = this.currentPath.endsWith('/legal.html') || this.currentPath.endsWith('legal.html');
+        if (isLegalIndex) return;
+
+        legalSections.forEach(section => {
+            const headingEl = section.querySelector('h4');
+            const heading = (headingEl ? headingEl.textContent : '' || '').toLowerCase().trim();
+            if (!heading.includes('legal')) return;
+
+            const listItems = Array.from(section.querySelectorAll('ul > li'));
+            if (listItems.length === 0) return;
+
+            // Determine allowed tokens per context
+            let allowedTokens = [];
+            if (this.isGamePage) {
+                if (heading.includes('game')) {
+                    allowedTokens = [
+                        'infinite-match-privacy-policy',
+                        'match-3-privacy-policy',
+                        'infinite-match-terms',
+                        'infinite-match-eula'
+                    ];
+                } else if (heading.includes('main')) {
+                    allowedTokens = ['legal.html'];
+                } else {
+                    // Generic legal heading on game page: keep minimal
+                    allowedTokens = [
+                        'infinite-match-privacy-policy',
+                        'infinite-match-terms',
+                        'infinite-match-eula',
+                        'legal.html'
+                    ];
+                }
+            } else {
+                // Main site pages
+                allowedTokens = [
+                    'legal.html',
+                    'privacy-policy',
+                    'terms-of-service',
+                    'cookie-policy'
+                ];
+            }
+
+            listItems.forEach(li => {
+                const anchor = li.querySelector('a');
+                if (!anchor) return;
+                const href = (anchor.getAttribute('href') || '').toLowerCase();
+                const keep = allowedTokens.some(token => href.includes(token));
+                if (!keep) {
+                    li.style.display = 'none';
+                }
+            });
         });
     }
 
@@ -204,10 +267,17 @@ class LegalNavigation {
     }
 }
 
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    new LegalNavigation();
-});
+// Initialize safely whether or not DOMContentLoaded already fired
+(function initLegalNavWhenReady() {
+    const init = () => {
+        try { new LegalNavigation(); } catch (e) { /* no-op */ }
+    };
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
 
 // Add CSS for breadcrumbs and current document highlighting
 const style = document.createElement('style');

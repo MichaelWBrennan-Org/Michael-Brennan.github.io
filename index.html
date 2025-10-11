@@ -622,6 +622,23 @@
             document.head.appendChild(script);
         })();
         
+        // Also ensure legal-navigation loads even if main.js defer fails
+        (function() {
+            var ensureLegal = function() {
+                if (!document.querySelector('script[src*="legal-navigation.js"]')) {
+                    var s = document.createElement('script');
+                    s.src = './assets/js/legal-navigation.js';
+                    s.async = true;
+                    document.head.appendChild(s);
+                }
+            };
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', ensureLegal);
+            } else {
+                ensureLegal();
+            }
+        })();
+        
         // Service Worker registration for PWA capabilities
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {

@@ -451,7 +451,9 @@ function initializeLegalNavigation() {
     // Load legal navigation script if not already loaded
     if (!document.querySelector('script[src*="legal-navigation.js"]')) {
         const script = document.createElement('script');
-        script.src = './assets/js/legal-navigation.js';
+        // Ensure correct relative path from both root and /games pages
+        const isGamesPage = window.location.pathname.includes('/games/');
+        script.src = (isGamesPage ? '../' : './') + 'assets/js/legal-navigation.js';
         script.async = true;
         document.head.appendChild(script);
     }
