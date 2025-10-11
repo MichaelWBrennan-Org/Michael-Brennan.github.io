@@ -5,41 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Brennan - Digital Solutions & Software Development</title>
     <meta name="description" content="Professional software development services, AI automation solutions, and digital transformation expertise. Specializing in modern web technologies and intelligent systems.">
-    <meta name="keywords" content="software development, AI automation, web development, digital solutions, GitHub automation">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta name="keywords" content="software development, AI automation, web development, digital solutions, GitHub automation, Michael Brennan, portfolio, Unity game development, full-stack developer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michaelwbrennan-org.github.io/">
+    <meta property="og:title" content="Michael Brennan - Digital Solutions & Software Development">
+    <meta property="og:description" content="Professional software development services, AI automation solutions, and digital transformation expertise. Specializing in modern web technologies and intelligent systems.">
+    <meta property="og:image" content="https://michaelwbrennan-org.github.io/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Michael Brennan Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://michaelwbrennan-org.github.io/">
+    <meta property="twitter:title" content="Michael Brennan - Digital Solutions & Software Development">
+    <meta property="twitter:description" content="Professional software development services, AI automation solutions, and digital transformation expertise. Specializing in modern web technologies and intelligent systems.">
+    <meta property="twitter:image" content="https://michaelwbrennan-org.github.io/assets/images/og-image.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="Michael Brennan">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://michaelwbrennan-org.github.io/">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://github.com">
+    <link rel="preconnect" href="https://www.linkedin.com">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//www.linkedin.com">
+    <!-- Critical CSS inline for above-the-fold content -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:1rem;line-height:1.6;color:#111827;background-color:#ffffff;overflow-x:hidden}
+        .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+        .navbar{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #e5e7eb;z-index:1030;transition:all 300ms ease-in-out}
+        .navbar .container{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem}
+        .nav-brand a{display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:#111827;font-weight:600}
+        .logo{width:40px;height:40px;background:linear-gradient(135deg,#4f46e5,#6366f1);color:#ffffff;border-radius:0.5rem;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.125rem}
+        .brand-text{font-size:1.25rem;font-weight:600}
+        .hero{background:linear-gradient(135deg,#4f46e5 0%,#3730a3 100%);color:#ffffff;padding:140px 0 6rem;position:relative;overflow:hidden}
+        .hero .container{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+        .hero-title{font-size:3rem;font-weight:700;line-height:1.1;margin-bottom:1.5rem}
+        .highlight{background:linear-gradient(45deg,#f59e0b,#10b981);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+        .hero-description{font-size:1.25rem;line-height:1.6;margin-bottom:2rem;opacity:0.9}
+        .hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+        .btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;font-size:1rem;font-weight:600;text-decoration:none;border-radius:0.5rem;transition:all 300ms ease-in-out;border:none;cursor:pointer;font-family:inherit}
+        .btn-primary{background:#ffffff;color:#4f46e5;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)}
+        .btn-primary:hover{background:#f9fafb;transform:translateY(-2px);box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04)}
+        .btn-secondary{background:transparent;color:#ffffff;border:2px solid #ffffff}
+        .btn-secondary:hover{background:#ffffff;color:#4f46e5}
+        .btn-icon{width:20px;height:20px}
+        @media (max-width:1024px){.hero .container{grid-template-columns:1fr;gap:3rem;text-align:center}}
+        @media (max-width:768px){.hero{padding:120px 0 4rem}.hero-title{font-size:1.875rem}.hero-description{font-size:1.125rem}.hero-cta{justify-content:center}.hero-image{order:-1}}
+    </style>
+    
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+    
+    <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Brennan",
+      "url": "https://michaelwbrennan-org.github.io",
+      "image": "https://michaelwbrennan-org.github.io/assets/images/profile.jpg",
+      "sameAs": [
+        "https://github.com/MichaelWBrennan-Org",
+        "https://www.linkedin.com/in/michaelwbrennan"
+      ],
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "knowsAbout": [
+        "Software Development",
+        "AI Automation",
+        "Web Development",
+        "Unity Game Development",
+        "DevOps",
+        "API Integration"
+      ],
+      "description": "Professional software development services, AI automation solutions, and digital transformation expertise.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "email": "michaelwilliambrennan@gmail.com",
+      "telephone": "+1-XXX-XXX-XXXX"
+    }
+    </script>
+    
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Michael Brennan Portfolio",
+      "url": "https://michaelwbrennan-org.github.io",
+      "description": "Professional software development services, AI automation solutions, and digital transformation expertise.",
+      "author": {
+        "@type": "Person",
+        "name": "Michael Brennan"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Michael Brennan"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://michaelwbrennan-org.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Service Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Software Development Services",
+      "description": "Professional software development, AI automation, web development, and digital transformation services.",
+      "provider": {
+        "@type": "Person",
+        "name": "Michael Brennan",
+        "url": "https://michaelwbrennan-org.github.io"
+      },
+      "areaServed": "Worldwide",
+      "serviceType": "Software Development",
+      "offers": {
+        "@type": "Offer",
+        "description": "Custom software development solutions",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-brand">
-                <a href="#home" aria-label="Michael Brennan - Home">
-                    <span class="logo">MB</span>
+                <a href="#home" aria-label="Michael Brennan - Home" class="brand-link">
+                    <span class="logo" aria-hidden="true">MB</span>
                     <span class="brand-text">Michael Brennan</span>
                 </a>
             </div>
             
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list" role="menubar">
-                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem" aria-current="page">Home</a></li>
                     <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
                     <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
                     <li role="none"><a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a></li>
+                    <li role="none"><a href="games/infinite-match.html" class="nav-link" role="menuitem">Games</a></li>
                     <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
                 </ul>
             </div>
             
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="hamburger" aria-hidden="true"></span>
             </button>
         </div>
     </nav>
 
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="#home" class="breadcrumb-link">Home</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero" role="banner">
         <div class="container">
@@ -52,16 +233,16 @@
                     Professional software development and AI automation services that drive innovation and streamline your business processes. Let's build the future together.
                 </p>
                 <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary" aria-label="Start your project">
+                    <a href="#contact" class="btn btn-primary" aria-label="Start your project with Michael Brennan">
                         Get Started Today
-                        <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
                     </a>
-                    <a href="#portfolio" class="btn btn-secondary">View My Work</a>
+                    <a href="#portfolio" class="btn btn-secondary" aria-label="View Michael Brennan's portfolio">View My Work</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" aria-hidden="true">
                 <div class="code-animation">
                     <div class="code-line"></div>
                     <div class="code-line"></div>
@@ -102,12 +283,12 @@
                 
                 <div class="about-stats">
                     <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item">
                         <div class="stat-number">5+</div>
                         <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">100%</div>
@@ -165,15 +346,7 @@
                     <p>Seamless integration with third-party services and APIs, creating connected ecosystems that enhance functionality and user experience.</p>
                 </div>
                 
-                <div class="service-card">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"/>
-                        </svg>
-                    </div>
-                    <h3>Consulting</h3>
-                    <p>Strategic technology consulting to help you make informed decisions about your digital transformation and software architecture.</p>
-                </div>
+
                 
                 <div class="service-card">
                     <div class="service-icon" aria-hidden="true">
@@ -195,6 +368,45 @@
             <p class="section-subtitle">Showcasing innovative solutions and successful implementations</p>
             
             <div class="portfolio-grid">
+                <!-- Infinite Match Game Project -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <div class="project-logo" style="background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);">
+                            IM
+                        </div>
+                        <h3>Infinite Match</h3>
+                    </div>
+                    
+                    <div class="portfolio-item-content">
+                        <p>A professional Match-3 puzzle game built with Unity, featuring cloud integration, automated deployment, and advanced monetization systems. This project showcases modern game development practices with CI/CD pipelines and comprehensive analytics.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Game Development</span>
+                            <span class="tech-tag">Cloud Integration</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="games/infinite-match.html" class="btn btn-primary">
+                                View Details
+                                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/MichaelWBrennan/Infinite_Match" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="github-btn">
+                                <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Automerge-Pro Project -->
                 <div class="portfolio-item">
                     <div class="portfolio-item-header">
@@ -238,7 +450,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Get In Touch</h3>
-                    <p>I'm always excited to discuss new projects and opportunities. Whether you need AI automation, web development, or technical consulting, let's connect and explore how we can work together.</p>
+                    <p>I'm always excited to discuss new projects and opportunities. Whether you need AI automation or web development, let's connect and explore how we can work together.</p>
                     
                     <div class="contact-methods">
                         <div class="contact-method">
@@ -246,7 +458,7 @@
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                             </svg>
-                            <span>hello@michaelbrennan.dev</span>
+                            <span>michaelwilliambrennan@gmail.com</span>
                         </div>
                         
                         <div class="contact-method">
@@ -266,8 +478,8 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <!-- TODO: Add actual form action URL for contact form submission -->
-                    <form class="contact-form" method="POST">
+                    <!-- Contact form with proper action and method -->
+                    <form class="contact-form" method="POST" action="https://formspree.io/f/xpwgkqkj" novalidate>
                         <div class="form-group">
                             <label for="name" class="form-label">Name *</label>
                             <input 
@@ -325,6 +537,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -356,18 +569,33 @@
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
-                        <!-- TODO: Add actual LinkedIn profile URL -->
-                        <!-- <a href="https://linkedin.com/in/[actual-username]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <a href="https://linkedin.com/in/michaelwbrennan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
-                        </a> -->
-                        <a href="mailto:hello@michaelbrennan.dev" aria-label="Email Contact">
+                        </a>
+                        <a href="mailto:michaelwilliambrennan@gmail.com" aria-label="Email Contact">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
                             </svg>
                         </a>
                     </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html">All Legal Documents</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="website-disclaimer.html">Website Disclaimer</a></li>
+                        <li><a href="dmca-policy.html">DMCA Policy</a></li>
+                        <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="eula.html">End User License Agreement</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                    </ul>
                 </div>
             </div>
             
@@ -377,7 +605,35 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="./assets/js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript loaded asynchronously for better performance -->
+    <script>
+        // Load main JavaScript asynchronously
+        (function() {
+            var script = document.createElement('script');
+            script.src = './assets/js/main.js';
+            script.async = true;
+            document.head.appendChild(script);
+        })();
+        
+        // Service Worker registration for PWA capabilities
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
