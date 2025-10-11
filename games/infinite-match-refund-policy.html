@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - Infinite Match Game | Michael Brennan</title>
+    <meta name="description" content="Refund policy for Infinite Match game - Information about refunds for in-app purchases and game content.">
+    <meta name="keywords" content="refund policy, Infinite Match, game refunds, in-app purchases, Michael Brennan">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .refund-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .refund-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .refund-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .refund-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .refund-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .refund-content {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .refund-section {
+            margin-bottom: 50px;
+        }
+        
+        .refund-section h2 {
+            color: #2d3748;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .refund-section h3 {
+            color: #4a5568;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+        
+        .refund-section p {
+            color: #718096;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .refund-section ul {
+            color: #718096;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .refund-section li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .warning-box {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .success-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+        
+        .back-to-game {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-back:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .refund-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .refund-table th,
+        .refund-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .refund-table th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .refund-table tr:hover {
+            background: #f9fafb;
+        }
+        
+        .refund-type {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .eligible {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .not-eligible {
+            background: #fef2f2;
+            color: #dc2626;
+        }
+        
+        .conditional {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        @media (max-width: 768px) {
+            .refund-title {
+                font-size: 2.5rem;
+            }
+            
+            .refund-content {
+                padding: 40px 0;
+            }
+            
+            .contact-info {
+                padding: 20px;
+            }
+            
+            .refund-table {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html" aria-label="Michael Brennan - Home">
+                    <span class="logo">MB</span>
+                    <span class="brand-text">Michael Brennan</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a href="../index.html#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="../index.html#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="../index.html#services" class="nav-link" role="menuitem">Services</a></li>
+                    <li role="none"><a href="../index.html#portfolio" class="nav-link" role="menuitem">Portfolio</a></li>
+                    <li role="none"><a href="infinite-match.html" class="nav-link" role="menuitem">Games</a></li>
+                    <li role="none"><a href="../index.html#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Refund Policy Hero Section -->
+    <section class="refund-hero">
+        <div class="container">
+            <div class="refund-hero-content">
+                <h1 class="refund-title">Refund Policy</h1>
+                <p class="refund-subtitle">
+                    Infinite Match - Match-3 Puzzle Game
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refund Policy Content -->
+    <section class="refund-content">
+        <div class="container">
+            <div class="refund-section">
+                <p><strong>Last Updated:</strong> October 2025</p>
+                <p>This Refund Policy explains the refund terms and conditions for Infinite Match, a Match-3 puzzle game developed by Michael Brennan ("we," "our," or "us"). Please read this policy carefully before making any in-app purchases.</p>
+                
+                <div class="highlight-box">
+                    <h3>Quick Summary</h3>
+                    <p>Refunds for in-app purchases are generally handled by your app store (Apple App Store, Google Play Store, etc.) and are subject to their respective refund policies. We may provide refunds in exceptional circumstances at our discretion.</p>
+                </div>
+            </div>
+
+            <div class="refund-section">
+                <h2>General Refund Policy</h2>
+                <p>All in-app purchases for Infinite Match are processed through third-party app stores (Apple App Store, Google Play Store, etc.). Refund requests must be submitted through the appropriate app store platform.</p>
+                
+                <h3>App Store Refund Policies</h3>
+                <ul>
+                    <li><strong>Apple App Store:</strong> Refunds are handled through Apple's refund system. Contact Apple Support or visit <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener noreferrer">Apple's refund page</a></li>
+                    <li><strong>Google Play Store:</strong> Refunds are handled through Google Play. Visit <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play refund page</a></li>
+                    <li><strong>Other Platforms:</strong> Contact the respective platform's support team</li>
+                </ul>
+            </div>
+
+            <div class="refund-section">
+                <h2>Refund Eligibility</h2>
+                <p>Refund eligibility depends on several factors:</p>
+                
+                <table class="refund-table">
+                    <thead>
+                        <tr>
+                            <th>Purchase Type</th>
+                            <th>Refund Eligibility</th>
+                            <th>Time Limit</th>
+                            <th>Conditions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="refund-type eligible">Eligible</span> Accidental Purchase</td>
+                            <td>Yes</td>
+                            <td>48 hours</td>
+                            <td>Must not have used the item</td>
+                        </tr>
+                        <tr>
+                            <td><span class="refund-type eligible">Eligible</span> Technical Issues</td>
+                            <td>Yes</td>
+                            <td>7 days</td>
+                            <td>Must be verified by our support team</td>
+                        </tr>
+                        <tr>
+                            <td><span class="refund-type eligible">Eligible</span> Duplicate Purchase</td>
+                            <td>Yes</td>
+                            <td>24 hours</td>
+                            <td>Must be verified through purchase history</td>
+                        </tr>
+                        <tr>
+                            <td><span class="refund-type conditional">Conditional</span> Change of Mind</td>
+                            <td>Maybe</td>
+                            <td>24 hours</td>
+                            <td>At our discretion, must not have used item</td>
+                        </tr>
+                        <tr>
+                            <td><span class="refund-type not-eligible">Not Eligible</span> Used Items</td>
+                            <td>No</td>
+                            <td>N/A</td>
+                            <td>Items that have been consumed or used</td>
+                        </tr>
+                        <tr>
+                            <td><span class="refund-type not-eligible">Not Eligible</span> Game Progress</td>
+                            <td>No</td>
+                            <td>N/A</td>
+                            <td>Virtual currency or items already spent</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="refund-section">
+                <h2>How to Request a Refund</h2>
+                <p>To request a refund, please follow these steps:</p>
+                
+                <h3>Step 1: Contact App Store</h3>
+                <p>First, try to request a refund through your app store:</p>
+                <ul>
+                    <li><strong>iOS:</strong> Go to Settings > [Your Name] > Media & Purchases > View Account > Purchase History</li>
+                    <li><strong>Android:</strong> Open Google Play Store > Menu > Account > Purchase History</li>
+                    <li><strong>Other Platforms:</strong> Check the platform's support documentation</li>
+                </ul>
+
+                <h3>Step 2: Contact Our Support</h3>
+                <p>If the app store cannot process your refund, contact our support team:</p>
+                <ul>
+                    <li><strong>Email:</strong> michaelwilliambrennan@gmail.com</li>
+                    <li><strong>Subject Line:</strong> "Refund Request - Infinite Match"</li>
+                    <li><strong>Include:</strong> Purchase receipt, reason for refund, and any relevant details</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h3>Important Information</h3>
+                    <p>We cannot process refunds directly. All refunds must go through the app store where you made the purchase. We can only assist with technical issues or provide guidance on the refund process.</p>
+                </div>
+            </div>
+
+            <div class="refund-section">
+                <h2>Refund Processing</h2>
+                <p>If we approve a refund request, here's what happens:</p>
+                
+                <h3>Processing Time</h3>
+                <ul>
+                    <li><strong>App Store Refunds:</strong> 3-5 business days</li>
+                    <li><strong>Direct Refunds:</strong> 5-10 business days</li>
+                    <li><strong>Bank Processing:</strong> Additional 3-5 business days</li>
+                </ul>
+
+                <h3>Refund Method</h3>
+                <ul>
+                    <li><strong>App Store Credits:</strong> Refunded to your app store account</li>
+                    <li><strong>Original Payment:</strong> Refunded to your original payment method</li>
+                    <li><strong>Bank Account:</strong> May take additional time to appear</li>
+                </ul>
+            </div>
+
+            <div class="refund-section">
+                <h2>Non-Refundable Items</h2>
+                <p>The following items are generally not eligible for refunds:</p>
+                
+                <ul>
+                    <li><strong>Consumed Items:</strong> Power-ups, boosters, or currency that has been used</li>
+                    <li><strong>Game Progress:</strong> Levels completed, achievements unlocked, or scores earned</li>
+                    <li><strong>Time-Based Items:</strong> Items that expire or have limited duration</li>
+                    <li><strong>Account Bans:</strong> Refunds due to account suspension or termination</li>
+                    <li><strong>Fraudulent Activity:</strong> Purchases made through fraudulent means</li>
+                </ul>
+            </div>
+
+            <div class="refund-section">
+                <h2>Special Circumstances</h2>
+                <p>We may consider refunds in the following special circumstances:</p>
+                
+                <h3>Technical Issues</h3>
+                <ul>
+                    <li>Game crashes preventing item usage</li>
+                    <li>Items not appearing in game after purchase</li>
+                    <li>Duplicate charges for the same item</li>
+                    <li>Server issues preventing item delivery</li>
+                </ul>
+
+                <h3>Documentation Required</h3>
+                <ul>
+                    <li>Purchase receipt or confirmation email</li>
+                    <li>Screenshots of the issue</li>
+                    <li>Device information and game version</li>
+                    <li>Detailed description of the problem</li>
+                </ul>
+            </div>
+
+            <div class="refund-section">
+                <h2>Dispute Resolution</h2>
+                <p>If you disagree with our refund decision, you may:</p>
+                
+                <ul>
+                    <li><strong>Appeal:</strong> Submit additional documentation or evidence</li>
+                    <li><strong>Escalate:</strong> Contact our support team for further review</li>
+                    <li><strong>Third-Party:</strong> Contact your app store's dispute resolution team</li>
+                    <li><strong>Legal:</strong> Pursue legal remedies as permitted by law</li>
+                </ul>
+
+                <div class="success-box">
+                    <h3>Our Commitment</h3>
+                    <p>We are committed to fair and transparent refund practices. We will review each case individually and make decisions based on the specific circumstances and our refund policy.</p>
+                </div>
+            </div>
+
+            <div class="refund-section">
+                <h2>Changes to This Policy</h2>
+                <p>We may update this Refund Policy from time to time. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting the updated policy in the game</li>
+                    <li>Sending notifications through the game interface</li>
+                    <li>Updating the "Last Updated" date at the top of this policy</li>
+                    <li>Email notification for significant changes (if you've provided contact information)</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Refund Policy or need assistance with a refund request, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> michaelwilliambrennan@gmail.com</li>
+                    <li><strong>Website:</strong> <a href="../index.html">michaelwbrennan-org.github.io</a></li>
+                    <li><strong>Game Support:</strong> Available through the game's help section</li>
+                    <li><strong>Response Time:</strong> We will respond to refund inquiries within 48 hours</li>
+                    <li><strong>Business Hours:</strong> Monday-Friday, 9 AM - 5 PM EST</li>
+                </ul>
+            </div>
+
+            <div class="back-to-game">
+                <a href="infinite-match.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    Back to Game
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <span class="logo">MB</span>
+                        <span class="brand-text">Michael Brennan</span>
+                    </div>
+                    <p>Creating innovative digital solutions that drive business growth and transformation.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#portfolio">Portfolio</a></li>
+                        <li><a href="infinite-match.html">Games</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Game Legal</h4>
+                    <ul>
+                        <li><a href="infinite-match-privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="infinite-match-terms.html">Terms of Service</a></li>
+                        <li><a href="infinite-match-eula.html">End User License Agreement</a></li>
+                        <li><a href="infinite-match-cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="infinite-match-refund-policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Main Legal</h4>
+                    <ul>
+                        <li><a href="../legal.html">All Legal Documents</a></li>
+                        <li><a href="../privacy-policy.html">Main Privacy Policy</a></li>
+                        <li><a href="../terms-of-service.html">Main Terms of Service</a></li>
+                        <li><a href="../cookie-policy.html">Main Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/MichaelWBrennan-Org" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:michaelwilliambrennan@gmail.com" aria-label="Email Contact">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Michael Brennan. All rights reserved. Built with care and attention to detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/legal-navigation.js"></script>
+</body>
+</html>
