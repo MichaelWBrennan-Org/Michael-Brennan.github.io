@@ -5,8 +5,8 @@ const CACHE_NAME = 'michael-brennan-portfolio-v1.0.0';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/infinite-match.html',
-  '/games/privacy-policy.html',
+  '/games/infinite-match.html',
+  '/games/Match-3-privacy-policy.html',
   '/assets/css/main.css',
   '/assets/js/main.js',
   '/manifest.json',
