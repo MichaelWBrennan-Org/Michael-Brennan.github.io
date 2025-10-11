@@ -195,7 +195,7 @@
         <div class="container">
             <div class="privacy-section">
                 <p><strong>Last Updated:</strong> December 2024</p>
-                <p>This Privacy Policy describes how Michael Brennan ("we," "our," or "us") collects, uses, and shares information when you play Infinite Match (the "Game").</p>
+                <p>This Privacy Policy describes how Michael Brennan ("we," "our," or "us") collects, uses, and shares information when you play Infinite Match (also known as "Evergreen Puzzler"), a Match-3 puzzle game built with Unity and comprehensive backend services.</p>
             </div>
 
             <div class="privacy-section">
@@ -209,14 +209,15 @@
                     <li><strong>Payment Information:</strong> Purchase history and transaction data (processed securely through Google Play Store)</li>
                 </ul>
 
-                <h3>Game Data</h3>
-                <p>We collect information about your gameplay to improve the game experience:</p>
+                <h3>Game Data (Match-3 Specific)</h3>
+                <p>We collect information about your Match-3 gameplay to improve the game experience:</p>
                 <ul>
-                    <li>Game progress, level completion, and achievements</li>
-                    <li>Score data and leaderboard rankings</li>
-                    <li>Game settings and preferences</li>
-                    <li>In-game purchases and virtual currency transactions</li>
-                    <li>Social features usage (if applicable)</li>
+                    <li><strong>Game Progress:</strong> Level completion, score data, and achievements</li>
+                    <li><strong>Match-3 Analytics:</strong> Tile matching patterns, combo sequences, and special move usage</li>
+                    <li><strong>Game Economy:</strong> Virtual currency, in-game purchases, and economy data (CSV-based)</li>
+                    <li><strong>Performance Metrics:</strong> Game completion times, difficulty progression, and player skill levels</li>
+                    <li><strong>Game Settings:</strong> Audio preferences, visual settings, and control configurations</li>
+                    <li><strong>Cloud Save Data:</strong> Game progress synchronized through Unity Cloud Services</li>
                 </ul>
 
                 <h3>Device and Technical Information</h3>
@@ -224,19 +225,30 @@
                 <ul>
                     <li>Device identifiers (Android Advertising ID, device ID)</li>
                     <li>Device information (model, manufacturer, operating system version)</li>
-                    <li>App version and build information</li>
+                    <li>Unity game version and build information</li>
                     <li>IP address (anonymized when possible)</li>
                     <li>Network information (WiFi, mobile data)</li>
-                    <li>Crash reports and error logs</li>
+                    <li>Crash reports and error logs from Unity Analytics</li>
+                    <li>Performance metrics (FPS, memory usage, load times)</li>
                 </ul>
 
                 <h3>Analytics and Performance Data</h3>
-                <p>We use Unity Analytics and other analytics services to understand how players interact with our game:</p>
+                <p>We use Unity Analytics and our custom analytics service to understand how players interact with our Match-3 game:</p>
                 <ul>
-                    <li>Session duration and frequency</li>
-                    <li>Feature usage patterns and gameplay statistics</li>
-                    <li>Performance metrics and technical diagnostics</li>
-                    <li>User engagement and retention data</li>
+                    <li><strong>Gameplay Analytics:</strong> Session duration, level attempts, and completion rates</li>
+                    <li><strong>Feature Usage:</strong> Which game features are used most frequently</li>
+                    <li><strong>Performance Monitoring:</strong> Game performance metrics and technical diagnostics</li>
+                    <li><strong>User Engagement:</strong> Retention data and player progression patterns</li>
+                    <li><strong>Match-3 Specific Data:</strong> Tile matching efficiency, combo usage, and puzzle-solving strategies</li>
+                </ul>
+
+                <h3>Backend Service Data</h3>
+                <p>Our game uses multiple backend services that may collect additional data:</p>
+                <ul>
+                    <li><strong>Economy Service:</strong> Virtual currency transactions and economic balance data</li>
+                    <li><strong>Analytics Service:</strong> Custom analytics and player behavior tracking</li>
+                    <li><strong>Security Service:</strong> Authentication tokens and security-related data</li>
+                    <li><strong>AI Service:</strong> Game difficulty adaptation and player skill assessment</li>
                 </ul>
             </div>
 
@@ -338,14 +350,23 @@
                     <li><strong>Unity Analytics:</strong> For game analytics and performance monitoring
                         <br><a href="https://unity3d.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>
                     </li>
-                    <li><strong>Unity Cloud:</strong> For cloud save and remote configuration
+                    <li><strong>Unity Cloud Services:</strong> For cloud save, remote configuration, and live operations
                         <br><a href="https://unity3d.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>
                     </li>
                     <li><strong>Google Play Services:</strong> For app distribution, in-app purchases, and authentication
                         <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
                     </li>
-                    <li><strong>Google Play Games Services:</strong> For achievements and leaderboards (if applicable)
-                        <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+                    <li><strong>MongoDB:</strong> For game data storage and analytics
+                        <br><a href="https://www.mongodb.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">MongoDB Privacy Policy</a>
+                    </li>
+                    <li><strong>PostgreSQL:</strong> For structured game data storage
+                        <br><a href="https://www.postgresql.org/about/policies/privacy/" target="_blank" rel="noopener noreferrer">PostgreSQL Privacy Policy</a>
+                    </li>
+                    <li><strong>Redis:</strong> For caching and session management
+                        <br><a href="https://redis.io/privacy" target="_blank" rel="noopener noreferrer">Redis Privacy Policy</a>
+                    </li>
+                    <li><strong>Docker:</strong> For containerized backend services
+                        <br><a href="https://www.docker.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Docker Privacy Policy</a>
                     </li>
                 </ul>
                 <p>These services have their own privacy policies, and we encourage you to review them. We are not responsible for the privacy practices of these third-party services.</p>
