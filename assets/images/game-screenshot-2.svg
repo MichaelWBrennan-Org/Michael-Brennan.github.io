@@ -1,0 +1,66 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44a08d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#bgGradient2)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="300" height="40" fill="rgba(255,255,255,0.1)"/>
+  <text x="150" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Level Select</text>
+  
+  <!-- Level Grid -->
+  <g transform="translate(30, 60)">
+    <!-- Level 1 -->
+    <rect x="0" y="0" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="25" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">1</text>
+    <circle cx="40" cy="10" r="6" fill="#feca57"/>
+    
+    <!-- Level 2 -->
+    <rect x="70" y="0" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="95" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">2</text>
+    <circle cx="110" cy="10" r="6" fill="#feca57"/>
+    
+    <!-- Level 3 -->
+    <rect x="140" y="0" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="165" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">3</text>
+    <circle cx="180" cy="10" r="6" fill="#feca57"/>
+    
+    <!-- Level 4 -->
+    <rect x="210" y="0" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="235" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">4</text>
+    <circle cx="250" cy="10" r="6" fill="#feca57"/>
+    
+    <!-- Level 5 -->
+    <rect x="0" y="70" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="25" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">5</text>
+    <circle cx="40" cy="80" r="6" fill="#feca57"/>
+    
+    <!-- Level 6 -->
+    <rect x="70" y="70" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="95" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">6</text>
+    <circle cx="110" cy="80" r="6" fill="#feca57"/>
+    
+    <!-- Level 7 -->
+    <rect x="140" y="70" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="165" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">7</text>
+    <circle cx="180" cy="80" r="6" fill="#feca57"/>
+    
+    <!-- Level 8 -->
+    <rect x="210" y="70" width="50" height="50" fill="rgba(255,255,255,0.9)" rx="8" filter="url(#shadow2)"/>
+    <text x="235" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4ecdc4">8</text>
+    <circle cx="250" cy="80" r="6" fill="#feca57"/>
+  </g>
+  
+  <!-- Progress Bar -->
+  <rect x="50" y="150" width="200" height="8" fill="rgba(255,255,255,0.3)" rx="4"/>
+  <rect x="50" y="150" width="120" height="8" fill="white" rx="4"/>
+  <text x="150" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Progress: 60%</text>
+</svg>
