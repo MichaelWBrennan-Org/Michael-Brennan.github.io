@@ -1,16 +1,25 @@
 User-agent: *
 Allow: /
 
+# Legal documents - explicitly allow
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+Allow: /cookie-policy.html
+Allow: /games/Match-3-privacy-policy.html
+
 # Sitemap
 Sitemap: https://michaelwbrennan-org.github.io/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
 
-# Disallow certain file types
+# Disallow certain file types and directories
 Disallow: *.css
 Disallow: *.js
 Disallow: *.json
 Disallow: /_site/
+Disallow: /_layouts/
+Disallow: /.git/
+Disallow: /node_modules/
 Disallow: /assets/css/
 Disallow: /assets/js/
