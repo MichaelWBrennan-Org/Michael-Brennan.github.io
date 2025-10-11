@@ -498,5 +498,59 @@
 
     <!-- JavaScript -->
     <script src="./assets/js/main.js"></script>
+    <script>
+        // Page-specific privacy policy access control
+        (function() {
+            // Check if user came from the correct page (match 3 features page)
+            const referrer = document.referrer;
+            const currentPage = window.location.href;
+            
+            // Allow access if:
+            // 1. User came from infinite-match.html (match 3 features page)
+            // 2. User came from the same domain and is on the match 3 privacy policy
+            // 3. User navigated directly (no referrer) - show warning but allow
+            const isFromMatch3Page = referrer.includes('infinite-match.html');
+            const isDirectAccess = !referrer || referrer === '';
+            const isFromSameDomain = referrer.includes(window.location.hostname);
+            
+            if (!isFromMatch3Page && !isDirectAccess && isFromSameDomain) {
+                // User came from a different page on the same domain
+                // Redirect them to the match 3 features page first
+                window.location.href = 'infinite-match.html';
+                return;
+            }
+            
+            // Show a notice for direct access
+            if (isDirectAccess) {
+                const notice = document.createElement('div');
+                notice.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: #fef3c7;
+                    border: 1px solid #f59e0b;
+                    border-radius: 8px;
+                    padding: 12px 16px;
+                    color: #92400e;
+                    font-size: 14px;
+                    z-index: 1000;
+                    max-width: 300px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                `;
+                notice.innerHTML = `
+                    <strong>Notice:</strong> This privacy policy is specific to the Match-3 game. 
+                    <a href="infinite-match.html" style="color: #92400e; text-decoration: underline;">View the game features</a> to learn more.
+                `;
+                document.body.appendChild(notice);
+                
+                // Auto-hide after 10 seconds
+                setTimeout(() => {
+                    if (notice.parentNode) {
+                        notice.parentNode.removeChild(notice);
+                    }
+                }, 10000);
+            }
+        })();
+    </script>
 </body>
 </html>
