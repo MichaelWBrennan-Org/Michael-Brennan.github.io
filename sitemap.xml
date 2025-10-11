@@ -7,10 +7,34 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://michaelwbrennan-org.github.io/infinite-match.html</loc>
+    <loc>https://michaelwbrennan-org.github.io/games/infinite-match.html</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://michaelwbrennan-org.github.io/privacy-policy.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://michaelwbrennan-org.github.io/terms-of-service.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://michaelwbrennan-org.github.io/cookie-policy.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://michaelwbrennan-org.github.io/legal.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://michaelwbrennan-org.github.io/games/Match-3-privacy-policy.html</loc>
