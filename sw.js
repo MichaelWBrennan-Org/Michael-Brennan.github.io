@@ -6,7 +6,7 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/infinite-match.html',
-  '/privacy-policy.html',
+  '/games/privacy-policy.html',
   '/assets/css/main.css',
   '/assets/js/main.js',
   '/manifest.json',
