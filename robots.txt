@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://michaelwbrennan-org.github.io/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow certain file types
+Disallow: *.css
+Disallow: *.js
+Disallow: *.json
+Disallow: /_site/
+Disallow: /assets/css/
+Disallow: /assets/js/
