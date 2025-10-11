@@ -13,8 +13,8 @@ if ! command -v python3 &> /dev/null; then
 fi
 
 # Check if privacy policy file exists
-if [ ! -f "privacy_policy.html" ]; then
-    echo "❌ Error: privacy_policy.html file not found!"
+if [ ! -f "privacy-policy.html" ]; then
+    echo "❌ Error: privacy-policy.html file not found!"
     echo "Make sure the privacy policy HTML file is in the same directory as this script."
     exit 1
 fi

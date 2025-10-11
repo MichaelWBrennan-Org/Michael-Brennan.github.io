@@ -4,8 +4,7 @@ This directory contains the privacy policy for "Infinite Match" mobile game and 
 
 ## Files
 
-- `privacy_policy.md` - Privacy policy in Markdown format
-- `privacy_policy.html` - Privacy policy in HTML format with styling
+- `privacy-policy.html` - Privacy policy in HTML format with styling
 - `server.py` - Python web server to serve the privacy policy
 - `start_privacy_server.sh` - Bash script to easily start the server
 - `README.md` - This file
@@ -106,4 +105,4 @@ server {
 
 ## Support
 
-If you need to modify the privacy policy content, edit the `privacy_policy.html` file and restart the server.
+If you need to modify the privacy policy content, edit the `privacy-policy.html` file and restart the server.

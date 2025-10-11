@@ -23,7 +23,7 @@ class PrivacyPolicyHandler(http.server.SimpleHTTPRequestHandler):
             
             # Read and serve the privacy policy HTML file
             try:
-                with open('privacy_policy.html', 'r', encoding='utf-8') as f:
+                with open('privacy-policy.html', 'r', encoding='utf-8') as f:
                     content = f.read()
                 self.wfile.write(content.encode('utf-8'))
             except FileNotFoundError:
@@ -84,8 +84,8 @@ if __name__ == "__main__":
         host = sys.argv[2]
     
     # Check if privacy policy file exists
-    if not os.path.exists('privacy_policy.html'):
-        print("❌ Error: privacy_policy.html file not found!")
+    if not os.path.exists('privacy-policy.html'):
+        print("❌ Error: privacy-policy.html file not found!")
         print("Make sure the privacy policy HTML file is in the same directory as this server script.")
         sys.exit(1)
     
