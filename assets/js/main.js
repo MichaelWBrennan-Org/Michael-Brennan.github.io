@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeContactForm();
     initializeScrollSpy();
     initializeParallax();
+    initializeLegalNavigation();
 });
 
 /**
@@ -442,3 +443,16 @@ additionalStyles.textContent = `
 `;
 
 document.head.appendChild(additionalStyles);
+
+/**
+ * Initialize legal navigation system
+ */
+function initializeLegalNavigation() {
+    // Load legal navigation script if not already loaded
+    if (!document.querySelector('script[src*="legal-navigation.js"]')) {
+        const script = document.createElement('script');
+        script.src = './assets/js/legal-navigation.js';
+        script.async = true;
+        document.head.appendChild(script);
+    }
+}
