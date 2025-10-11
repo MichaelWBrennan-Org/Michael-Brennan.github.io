@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitration Agreement - Michael Brennan | Digital Solutions</title>
+    <meta name="description" content="Arbitration Agreement for Michael Brennan's services - Binding arbitration terms and dispute resolution procedures.">
+    <meta name="keywords" content="arbitration agreement, dispute resolution, binding arbitration, legal protection, Michael Brennan">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .arbitration-hero {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .arbitration-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .arbitration-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .arbitration-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .arbitration-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .arbitration-content {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .arbitration-section {
+            margin-bottom: 50px;
+        }
+        
+        .arbitration-section h2 {
+            color: #2d3748;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .arbitration-section h3 {
+            color: #4a5568;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+        
+        .arbitration-section p {
+            color: #718096;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .arbitration-section ul {
+            color: #718096;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .arbitration-section li {
+            margin-bottom: 8px;
+        }
+        
+        .arbitration-section ol {
+            color: #718096;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .critical-box {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .success-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+        
+        .back-to-home {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #dc2626;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-back:hover {
+            background: #991b1b;
+            transform: translateY(-2px);
+        }
+        
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .legal-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #dc2626;
+        }
+        
+        .legal-card h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .legal-card p {
+            color: #718096;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        .prohibited-list {
+            background: #fef2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .prohibited-list h4 {
+            color: #dc2626;
+            margin-bottom: 15px;
+        }
+        
+        .prohibited-list ul {
+            color: #dc2626;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .arbitration-title {
+                font-size: 2.5rem;
+            }
+            
+            .arbitration-content {
+                padding: 40px 0;
+            }
+            
+            .contact-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" aria-label="Michael Brennan - Home">
+                    <span class="logo">MB</span>
+                    <span class="brand-text">Michael Brennan</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a href="index.html#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="index.html#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="index.html#services" class="nav-link" role="menuitem">Services</a></li>
+                    <li role="none"><a href="index.html#portfolio" class="nav-link" role="menuitem">Portfolio</a></li>
+                    <li role="none"><a href="games/infinite-match.html" class="nav-link" role="menuitem">Games</a></li>
+                    <li role="none"><a href="index.html#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Arbitration Hero Section -->
+    <section class="arbitration-hero">
+        <div class="container">
+            <div class="arbitration-hero-content">
+                <h1 class="arbitration-title">Arbitration Agreement</h1>
+                <p class="arbitration-subtitle">
+                    Binding arbitration terms and dispute resolution procedures for maximum legal protection.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arbitration Content -->
+    <section class="arbitration-content">
+        <div class="container">
+            <div class="arbitration-section">
+                <p><strong>Last Updated:</strong> December 2024</p>
+                <p>This Arbitration Agreement ("Agreement") is a legally binding contract between you ("User" or "You") and Michael Brennan ("Company," "we," "our," or "us") that governs the resolution of disputes arising from or relating to your use of our website, services, or products.</p>
+            </div>
+
+            <div class="critical-box">
+                <h3>⚠️ CRITICAL LEGAL NOTICE</h3>
+                <p><strong>BY USING OUR WEBSITE, SERVICES, OR PRODUCTS, YOU AGREE TO RESOLVE ALL DISPUTES THROUGH BINDING ARBITRATION RATHER THAN IN COURT. THIS AGREEMENT WAIVES YOUR RIGHT TO A JURY TRIAL AND CLASS ACTION LAWSUITS.</strong></p>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Agreement to Arbitrate</h2>
+                <p>You and the Company agree that any and all disputes, claims, or controversies arising out of or relating to:</p>
+                <ul>
+                    <li>Your use of our website, services, or products</li>
+                    <li>This Arbitration Agreement</li>
+                    <li>Any other agreement between you and the Company</li>
+                    <li>The Company's privacy practices</li>
+                    <li>Any advertising, marketing, or promotional activities</li>
+                    <li>Any data collection, use, or sharing practices</li>
+                    <li>Any intellectual property rights or claims</li>
+                    <li>Any breach of contract or warranty claims</li>
+                    <li>Any tort claims (including negligence, fraud, or misrepresentation)</li>
+                    <li>Any statutory or regulatory claims</li>
+                </ul>
+                <p><strong>Shall be resolved exclusively through binding arbitration, except as otherwise provided in this Agreement.</strong></p>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Waiver of Rights</h2>
+                <p>By agreeing to this Arbitration Agreement, you waive the following rights:</p>
+                
+                <div class="prohibited-list">
+                    <h4>🚫 Rights You Are Waiving</h4>
+                    <ul>
+                        <li><strong>Right to Jury Trial:</strong> You waive your constitutional right to a trial by jury</li>
+                        <li><strong>Class Action Rights:</strong> You waive your right to participate in class action lawsuits</li>
+                        <li><strong>Class Arbitration Rights:</strong> You waive your right to participate in class arbitration</li>
+                        <li><strong>Court Proceedings:</strong> You waive your right to file lawsuits in court</li>
+                        <li><strong>Appeal Rights:</strong> You waive your right to appeal arbitration decisions (except as provided by law)</li>
+                        <li><strong>Discovery Rights:</strong> You waive extensive discovery rights available in court</li>
+                        <li><strong>Public Proceedings:</strong> You waive your right to public court proceedings</li>
+                        <li><strong>Punitive Damages:</strong> You waive your right to seek punitive damages in most cases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Arbitration Rules and Procedures</h2>
+                <p>All arbitration proceedings shall be conducted in accordance with the following rules:</p>
+                
+                <div class="legal-grid">
+                    <div class="legal-card">
+                        <h4>🏛️ Governing Rules</h4>
+                        <p>American Arbitration Association (AAA) Commercial Arbitration Rules and Mediation Procedures</p>
+                    </div>
+                    
+                    <div class="legal-card">
+                        <h4>📍 Location</h4>
+                        <p>Arbitration shall be conducted in the United States, in a location convenient to both parties</p>
+                    </div>
+                    
+                    <div class="legal-card">
+                        <h4>👨‍⚖️ Arbitrator</h4>
+                        <p>Single arbitrator with expertise in the subject matter of the dispute</p>
+                    </div>
+                    
+                    <div class="legal-card">
+                        <h4>💰 Costs</h4>
+                        <p>Each party shall bear their own costs, unless the arbitrator determines otherwise</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Arbitration Process</h2>
+                <p>The arbitration process shall proceed as follows:</p>
+                <ol>
+                    <li><strong>Notice of Dispute:</strong> Either party may initiate arbitration by providing written notice to the other party</li>
+                    <li><strong>Selection of Arbitrator:</strong> The parties shall select a mutually agreeable arbitrator within 30 days</li>
+                    <li><strong>Arbitration Hearing:</strong> The hearing shall be conducted within 90 days of arbitrator selection</li>
+                    <li><strong>Evidence and Testimony:</strong> Each party may present evidence and call witnesses</li>
+                    <li><strong>Arbitrator Decision:</strong> The arbitrator shall render a written decision within 30 days of the hearing</li>
+                    <li><strong>Binding Effect:</strong> The arbitrator's decision shall be final and binding on both parties</li>
+                </ol>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Limited Exceptions to Arbitration</h2>
+                <p>The following disputes are NOT subject to arbitration and may be resolved in court:</p>
+                <ul>
+                    <li><strong>Intellectual Property Disputes:</strong> Claims involving patents, trademarks, copyrights, or trade secrets</li>
+                    <li><strong>Injunctive Relief:</strong> Claims seeking injunctive or other equitable relief</li>
+                    <li><strong>Small Claims:</strong> Disputes involving less than $10,000 may be resolved in small claims court</li>
+                    <li><strong>Emergency Relief:</strong> Emergency or temporary restraining orders</li>
+                    <li><strong>Collection Actions:</strong> Actions to collect outstanding debts or fees</li>
+                </ul>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Arbitration Costs and Fees</h2>
+                <p>Costs and fees associated with arbitration shall be allocated as follows:</p>
+                <ul>
+                    <li><strong>Filing Fees:</strong> Each party shall pay their own filing fees</li>
+                    <li><strong>Arbitrator Fees:</strong> Shared equally between the parties</li>
+                    <li><strong>Attorney Fees:</strong> Each party shall bear their own attorney fees</li>
+                    <li><strong>Expert Witness Fees:</strong> Each party shall bear their own expert witness fees</li>
+                    <li><strong>Other Costs:</strong> Each party shall bear their own costs for discovery, transcripts, and other expenses</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <h3>⚠️ Cost Warning</h3>
+                    <p><strong>Arbitration can be expensive. You may be responsible for significant costs even if you win your case. Consider this carefully before agreeing to arbitration.</strong></p>
+                </div>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Confidentiality</h2>
+                <p>All arbitration proceedings shall be confidential and private:</p>
+                <ul>
+                    <li>No public access to arbitration hearings or records</li>
+                    <li>Arbitration decisions shall not be published or made public</li>
+                    <li>All parties and witnesses are bound by confidentiality obligations</li>
+                    <li>Arbitration records shall not be discoverable in other proceedings</li>
+                </ul>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Severability and Survival</h2>
+                <p>If any provision of this Arbitration Agreement is found to be unenforceable or invalid:</p>
+                <ul>
+                    <li>The remaining provisions shall remain in full force and effect</li>
+                    <li>The invalid provision shall be severed from the agreement</li>
+                    <li>The parties shall attempt to negotiate a replacement provision</li>
+                    <li>If negotiation fails, the matter shall be resolved by the arbitrator</li>
+                </ul>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Modification and Termination</h2>
+                <p>This Arbitration Agreement may be modified or terminated as follows:</p>
+                <ul>
+                    <li><strong>Modification:</strong> Only by written agreement signed by both parties</li>
+                    <li><strong>Termination:</strong> Either party may terminate with 30 days written notice</li>
+                    <li><strong>Survival:</strong> Termination does not affect disputes that arose before termination</li>
+                    <li><strong>Website Changes:</strong> Changes to this agreement on our website are not binding unless you explicitly agree</li>
+                </ul>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Governing Law</h2>
+                <p>This Arbitration Agreement shall be governed by and construed in accordance with:</p>
+                <ul>
+                    <li><strong>Federal Law:</strong> The Federal Arbitration Act (9 U.S.C. § 1 et seq.)</li>
+                    <li><strong>State Law:</strong> The laws of the State of Delaware (without regard to conflict of law principles)</li>
+                    <li><strong>Arbitration Rules:</strong> The rules and procedures of the American Arbitration Association</li>
+                </ul>
+            </div>
+
+            <div class="arbitration-section">
+                <h2>Right to Opt-Out</h2>
+                <p>You have the right to opt out of this Arbitration Agreement within 30 days of first using our services:</p>
+                <ul>
+                    <li><strong>Opt-Out Method:</strong> Send written notice to michaelwilliambrennan@gmail.com</li>
+                    <li><strong>Required Information:</strong> Include your name, email, and clear statement of opt-out</li>
+                    <li><strong>Effective Date:</strong> Opt-out becomes effective upon receipt of your notice</li>
+                    <li><strong>Consequences:</strong> Opting out means disputes will be resolved in court, not arbitration</li>
+                </ul>
+            </div>
+
+            <div class="success-box">
+                <h3>✅ Binding Agreement</h3>
+                <p><strong>By using our website, services, or products, you acknowledge that you have read, understood, and agree to be bound by this Arbitration Agreement. This agreement is legally binding and enforceable.</strong></p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>For questions about this Arbitration Agreement or to exercise your opt-out rights:</p>
+                <ul>
+                    <li><strong>Email:</strong> michaelwilliambrennan@gmail.com</li>
+                    <li><strong>Subject Line:</strong> Arbitration Agreement Inquiry</li>
+                    <li><strong>Website:</strong> <a href="index.html">michaelwbrennan.github.io</a></li>
+                    <li><strong>Response Time:</strong> We will respond within 48 hours</li>
+                </ul>
+            </div>
+
+            <div class="back-to-home">
+                <a href="index.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <span class="logo">MB</span>
+                        <span class="brand-text">Michael Brennan</span>
+                    </div>
+                    <p>Creating innovative digital solutions that drive business growth and transformation.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="games/infinite-match.html">Games</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html">All Legal Documents</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="website-disclaimer.html">Website Disclaimer</a></li>
+                        <li><a href="dmca-policy.html">DMCA Policy</a></li>
+                        <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="eula.html">End User License Agreement</a></li>
+                        <li><a href="arbitration-agreement.html">Arbitration Agreement</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/MichaelWBrennan-Org" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:michaelwilliambrennan@gmail.com" aria-label="Email Contact">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Michael Brennan. All rights reserved. Built with care and attention to detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
